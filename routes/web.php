@@ -22,4 +22,8 @@ Route::get('hallo', function () {
 Route::get('profil', 'CobaController@profil');
 // untuk menampilkan view dari controller biodata
 Route::get('biodata', 'BiodataController@index');
+// untuk menampilkan view dari 1 controller 3 function
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
 
